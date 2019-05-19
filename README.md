@@ -2,4 +2,4 @@
 
 # twitter-fire-scraper-dashboard
 
-A web interface to interact with the Twitter Fire Scraper.
+A web interface to interact with the [Twitter Fire Scraper](https://github.com/twitter-fire-scraper-analytics/twitter-fire-scraper).
