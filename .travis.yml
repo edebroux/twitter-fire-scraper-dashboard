@@ -101,24 +101,27 @@ before_install:
       bash coding/setup-scripts/install-npm.sh
     fi
 
+  - echo "Installing twitter-fire-scraper..."
+  - pip install twitter-fire-scraper
+
 script:
 
   - echo "I am script!"
 
-  - pushd coding
+  - pushd continuous-integration/setup-scripts
 
   - echo "Testing twitter fire scraper"
-  - bash setup-scripts/test-tfs.sh
+  - bash continuous-integration/setup-scripts/test-tfs.sh
 
   - echo "Testing twitter fire scraper web API"
-  - bash setup-scripts/test-tfs-webapi.sh
+  - bash continuous-integration/setup-scripts/test-tfs-webapi.sh
 
   - echo "twitter-fire-scraper-dashboard is starting up."
   - echo "Starting up Web API..."
-  - bash setup-scripts/start-tfs-webapi.sh
+  - bash continuous-integration/setup-scripts/start-tfs-webapi.sh
 
   - echo "Starting dashboard..."
-  - bash setup-scripts/start-tfs-dashboard.sh
+  - bash continuous-integration/setup-scripts/start-tfs-dashboard.sh
 
   - popd
 

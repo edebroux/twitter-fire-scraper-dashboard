@@ -1,4 +1,4 @@
-pushd twitter-fire-scraper-dashboard/TwitterFireScraperDashboard/TwitterFireScraperDashboard
+pushd code/twitter-fire-scraper-dashboard/TwitterFireScraperDashboard
 
 npm install
 npm run build
