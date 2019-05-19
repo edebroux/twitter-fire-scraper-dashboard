@@ -108,12 +108,6 @@ script:
 
   - echo "I am script!"
 
-  - echo "Testing twitter fire scraper"
-  - bash continuous-integration/setup-scripts/test-tfs.sh
-
-  - echo "Testing twitter fire scraper web API"
-  - bash continuous-integration/setup-scripts/test-tfs-webapi.sh
-
   - echo "twitter-fire-scraper-dashboard is starting up."
   - echo "Starting up Web API..."
   - bash continuous-integration/setup-scripts/start-tfs-webapi.sh
