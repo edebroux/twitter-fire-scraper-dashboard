@@ -4,5 +4,3 @@ sleep 30
 
 echo PID of flask web server is ${FLASK_PID}
 curl -v 127.0.0.1:3620
-
-popd
